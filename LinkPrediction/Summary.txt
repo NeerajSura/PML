@@ -1,3 +1,6 @@
+SUMMARY
+Comparison of all 3 Classifiers Used [Best Predictions comparison]
+
 1. RandomForestClassifier
 Parameters : max_depth=10, min_samples_split=10, n_estimators=200, random_state=42
 Num_samples - 40K Features - RA JC AA PA PPS SPS
@@ -13,4 +16,4 @@ AUC_score - 0.892
 Parameters : {'feature_fraction': 0.7126920423015797, 'learning_rate': 0.06864101661863267, 'max_depth': 4, 'min_child_weight': 9, 'min_split_gain': 0.06804471371881302, 'num_leaves': 86, 'reg_alpha': 0.7064754600685756, 'reg_lambda': 0.31840285481192276, 'objective': None, 'num_iterations': 259}
 Num_samples - 40K
 Features - RA JC AA PA PPS SPS
-AUC_score - 0.908
+AUC_score - 0.91
