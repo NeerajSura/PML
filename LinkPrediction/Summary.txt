@@ -1,17 +1,16 @@
 1. RandomForestClassifier
 Parameters : max_depth=10, min_samples_split=10, n_estimators=200, random_state=42
-Num_samples - 20K
-Features - RA JC AA PA PPS SPS
+Num_samples - 40K Features - RA JC AA PA PPS SPS
 AUC_score - 0.888
 
 2. Logistic Regression:
 Parameters : max_iter=1000, C=1e4,penalty='l2'
-Num_samples - 20K
+Num_samples - 40K
 Features - RA JC AA PA PPS SPS
 AUC_score - 0.892
 
 3. LightGBM Classifier:
-Parameters : {'objective': 'binary', 'boosting_type': 'gbdt', 'nthread': 4, 'learning_rate': 0.01, 'num_leaves': 31, 'feature_fraction': 0.8, 'bagging_fraction': 0.8, 'bagging_freq': 1, 'early_stopping_round': 10, 'max_depth': 3, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'min_split_gain': 0.01, 'min_child_weight': 50, 'seed': 0, 'metric': 'auc', 'verbose': 1, 'num_iterations': 1000}
-Num_samples - 20K
+Parameters : {'feature_fraction': 0.7126920423015797, 'learning_rate': 0.06864101661863267, 'max_depth': 4, 'min_child_weight': 9, 'min_split_gain': 0.06804471371881302, 'num_leaves': 86, 'reg_alpha': 0.7064754600685756, 'reg_lambda': 0.31840285481192276, 'objective': None, 'num_iterations': 259}
+Num_samples - 40K
 Features - RA JC AA PA PPS SPS
-AUC_score - 0.9
+AUC_score - 0.908
